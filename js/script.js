@@ -41,7 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
 // Updated showReservationMessage function
 function showReservationMessage() {
     alert('Your reservation has been booked! We look forward to welcoming you.');
-    // You can add additional logic here, such as clearing the form or redirecting to a thank-you page.
+    // Clear the form after showing the message
+    clearReservationForm();
+    // You can add additional logic here, such as resetting the form or performing other actions.
+}
+
+// Function to clear the reservation form
+function clearReservationForm() {
+    document.getElementById('reservations-form').reset();
 }
 
 // Updated form submission function
@@ -65,64 +72,15 @@ function submitReservationForm() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the date input element
-    var dateInput = document.getElementById('date');
+    // ... (Your existing code)
 
-    // Set the minimum date to today
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
-    var yyyy = today.getFullYear();
+    // Add an event listener for the reservations form submission
+    var reservationsForm = document.getElementById('reservations-form');
+    reservationsForm.addEventListener('submit', function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
 
-    today = yyyy + '-' + mm + '-' + dd;
-    dateInput.setAttribute('min', today);
-
-    // Set the maximum date
-    dateInput.setAttribute('max', '2024-12-31');
-
-    // Add an event listener for when the date changes
-    dateInput.addEventListener('input', function () {
-        // Get the selected date
-        var selectedDate = new Date(dateInput.value);
-
-        // Check if the selected day is Wednesday to Sunday (days 3 to 6)
-        if (selectedDate.getDay() < 3 || selectedDate.getDay() > 6) {
-            // If not, display an alert and clear the input value
-            alert('Please select a date between Wednesday and Sunday.');
-            dateInput.value = '';
-        }
+        // Call the submitReservationForm function
+        submitReservationForm();
     });
-
-// Get the date input element
-var dateInput = document.getElementById('date');
-
-// Set the minimum date to today
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
-var yyyy = today.getFullYear();
-
-today = yyyy + '-' + mm + '-' + dd;
-dateInput.setAttribute('min', today);
-
-// Updated event listener for date input
-dateInput.addEventListener('input', function () {
-    // Get the selected date
-    var selectedDate = new Date(dateInput.value);
-
-    // Check if the selected day is Wednesday to Sunday (days 3 to 6)
-    if (selectedDate.getDay() < 3 || selectedDate.getDay() > 6) {
-        // If not, display an alert and clear the input value
-        alert('Please select a date between Wednesday and Sunday.');
-        dateInput.value = '';
-        return; // Exit the function to prevent further validation
-    }
-
-    // Get the time input element
-    var timeInput = document.getElementById('time');
-
-    // Reset the time input value when the date changes
-    timeInput.value = '';
-});
-
 });
