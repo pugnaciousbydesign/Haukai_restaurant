@@ -235,6 +235,7 @@ body {
     }
   }
   
+
   /*--------------------------------------------------------------
 # Columns
 --------------------------------------------------------------*/
@@ -347,7 +348,27 @@ body {
     background: #769ea1; }
   
     
-    
+    /*--------------------------------------------------------------
+# Calendar
+--------------------------------------------------------------*/
+  /* Add additional styling for the calendar here */
+  .calendar {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+th {
+    background-color: #4d6567;
+    color: #fff;
+}  
 
 /*--------------------------------------------------------------
 # Tables
@@ -364,9 +385,10 @@ table {
 
 table th,
 table td {
-  border: 1px solid #1d0b97;
+  border: 1px solid #ffffff;
   padding: 10px;
   white-space: nowrap; /* Add this property to prevent line breaks within cells */
+  
 }
 
 /* Responsive table styles for smaller screens */
