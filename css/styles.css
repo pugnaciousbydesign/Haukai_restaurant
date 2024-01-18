@@ -119,6 +119,20 @@ body {
     
     }
     
+    @media screen and (max-width: 500px) {
+      header {
+        background: #2b2b2b;
+        color: #fff;
+        padding: 15px; /* Adjust padding as needed */
+        margin: -20px;
+        overflow: hidden;
+      }
+    
+      h1 {
+        font-size: 24px; /* Adjust font size as needed */
+      }
+    }
+    
       /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -231,12 +245,6 @@ body {
   margin: 5%;
 }
 
-.column2 {
-  float: left;
-  width: 30%;
-  margin: 5%;
-}
-
 .col_header {
   
   color: #35474B;
@@ -249,11 +257,19 @@ body {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .column {
-    width: 100%;
+    width: 90%; /* Adjust width as needed */
+    margin: 5px; /* Adjust margin as needed */
   }
 }
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .column {
+    width: 48%; /* Adjust width as needed */
+  }
+}
+
   /*--------------------------------------------------------------
 # Images
 --------------------------------------------------------------*/
@@ -336,32 +352,48 @@ body {
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/  
-   table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 40px;
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+table th,
+table td {
+  border: 1px solid #1d0b97;
+  padding: 10px;
+  white-space: nowrap; /* Add this property to prevent line breaks within cells */
+}
+
+/* Responsive table styles for smaller screens */
+@media only screen and (max-width: 500px) {
+  .table-container {
+    overflow-x: auto;
   }
-    
+
+  table {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
   table th,
   table td {
-    border: 1px solid #1d0b97;
-    padding: 10px;
+    font-size: 14px !important;
+    padding: 8px !important;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
   }
-    
-  table th {
-    background: linear-gradient(to bottom, #873439, #8e646c);
-    color: #fff;
-    padding: 0;
-    text-align: center;
-  }
-  /* smaller device styles for tables */
-    @media (max-width: 768px) {
-        table th,
-        table td {
-          font-size: 14px;
-          padding: 8px;
-        }
-      }
+}
+
+
+
+
   
    /*--------------------------------------------------------------
 # Videos
