@@ -10,16 +10,7 @@ body {
     background-color: #ebe9e3;
   }
 
-    /* Main content styles */
-    main {
-      padding: 20px;
-    }
-    
-    section {
-      margin-bottom: 40px;
-    }
-
-  
+     
   .section-video {
     border: 1px solid #000;
     padding: 10px;
@@ -128,9 +119,13 @@ body {
     
     }
     
+      /*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
     main {
     margin-top: 30px; /* Add margin to the top of the main content to prevent it from overlapping with the fixed header */
-    margin-bottom: 300px;
+    margin-bottom: 30px;
     }
     
     /* mobile friendly banner*/
@@ -213,7 +208,7 @@ body {
   .banner {
     font-style: italic;
     text-align: center;
-    color: #769ea1;
+    color: #35474B;
     padding: 20px;
     
   }
@@ -244,7 +239,7 @@ body {
 
 .col_header {
   
-  color: #769ea1;
+  color: #35474B;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -336,9 +331,9 @@ body {
     font-variant: normal; 
     text-transform: none; 
     text-align: center;
-    background-image: linear-gradient(to right, #769ea1 0%, #769ea1 50%, #769ea1 100%); 
+    background-image: linear-gradient(to right, #35474B 0%, #35474B 50%, #35474B 100%); 
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
-    border: 2px solid #769ea1; 
+   
     }
     .myButton:hover {
     background: #4d6567; }
@@ -394,7 +389,7 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        border:#769ea1
+        
       }
   
   
@@ -407,7 +402,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background: linear-gradient(to bottom, #769ea1, #43595b);
+    background: linear-gradient(to bottom, #35474B, #35474B);
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex; 
@@ -460,7 +455,7 @@ body {
   }
  form button:hover {
     background-color: #ffffff; /* change to your desired color */
-    color: #769ea1; /* change to your desired color */
+    color: #35474B; /* change to your desired color */
 
   }
   
@@ -484,11 +479,9 @@ body {
       }
     }
   
-    /* Style for external link*/
-  .external-link {
-    background-color: #a9e1ae;
+   
   
-  }
+  
   
     
    /*--------------------------------------------------------------
