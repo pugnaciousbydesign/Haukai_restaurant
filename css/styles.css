@@ -334,7 +334,7 @@ body {
   }
   /* Styles for mobile devices */
   @media (max-width: 768px) {
-    .img_cust {
+    .img_featured {
       width: 100%;
       height: auto;
       max-height: 300px;
@@ -354,7 +354,7 @@ body {
   }
   /* Styles for mobile devices */
   @media (max-width: 768px) {
-    .img_cust {
+    .img_restaurant {
       width: 100%;
       height: auto;
       max-height: 300px;
