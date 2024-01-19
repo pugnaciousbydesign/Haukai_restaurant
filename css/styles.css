@@ -2,6 +2,13 @@
 # GENERAL STYLES
 --------------------------------------------------------------*/
 
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('fonts\BebasNeue-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -70,7 +77,7 @@ body {
   
   /* Logo Text in main header and footer*/
   .logo {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 6rem;
   font-weight: 600;
   letter-spacing: 1px;
