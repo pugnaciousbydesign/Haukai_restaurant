@@ -96,6 +96,21 @@ body {
     }
    
   }
+
+  .content {
+      text-align: center;
+      color: #35474B;
+      padding: 20px;
+      
+    }
+    
+    /* mobile friendly banner*/
+    @media screen and (max-width: 800px) {
+      .content {
+        max-width: 100%;
+       
+      }
+    }
   /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -247,7 +262,7 @@ body {
 }
 
 .col_header {
-  
+  text-align: center;
   color: #35474B;
 }
 /* Clear floats after the columns */
@@ -319,7 +334,25 @@ body {
     }
   }
   
-  
+  .img_restaurant {
+    max-width: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  /* Styles for mobile devices */
+  @media (max-width: 768px) {
+    .img_cust {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+  }
 
  /*--------------------------------------------------------------
 # Buttons
@@ -388,7 +421,6 @@ table td {
   border: 1px solid #ffffff;
   padding: 10px;
   white-space: nowrap; /* Add this property to prevent line breaks within cells */
-  
 }
 
 /* Responsive table styles for smaller screens */
@@ -406,9 +438,6 @@ table td {
   table td {
     font-size: 14px !important;
     padding: 8px !important;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
     box-sizing: border-box;
   }
 }
