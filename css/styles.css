@@ -315,7 +315,7 @@ body {
   
   
   .img_featured {
-    max-width: 100%;
+    max-width: 1000px;
     
     object-fit: cover;
     object-position: center;
@@ -335,7 +335,7 @@ body {
   }
   
   .img_restaurant {
-    max-width: 100%;
+    max-width: 1000px;
     
     object-fit: cover;
     object-position: center;
