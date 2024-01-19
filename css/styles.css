@@ -361,6 +361,26 @@ body {
     }
   }
 
+  .img_menu {
+    max-width: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  /* Styles for mobile devices */
+  @media (max-width: 768px) {
+    .img_featured {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+  }
+
  /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/  
