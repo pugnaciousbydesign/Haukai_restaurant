@@ -71,8 +71,6 @@ function submitReservationForm() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    // ... (Your existing code)
 
     // Add an event listener for the reservations form submission
     var reservationsForm = document.getElementById('reservations-form');
@@ -83,4 +81,4 @@ document.addEventListener('DOMContentLoaded', function () {
         // Call the submitReservationForm function
         submitReservationForm();
     });
-});
+
