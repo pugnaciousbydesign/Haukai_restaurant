@@ -72,7 +72,10 @@
         <input type="date" id="date" name="date" min="2024-01-18" max="2024-12-31" required>
 
         <label for="time">Time:</label>
-        <input type="time" id="time" name="time" min="16:00" max="22:00" required>
+        <input type="time" id="time" name="time" min="16:00" max="22:00" step="300" required>
+        <!-- Fallback text input for time -->
+        <label for="timeFallback">Time:</label>
+        <input type="text" id="timeFallback" name="timeFallback" placeholder="HH:mm" required>
 
         <label for="guests">Number of Guests:</label>
         <input type="number" id="guests" name="guests" min="1" required>
