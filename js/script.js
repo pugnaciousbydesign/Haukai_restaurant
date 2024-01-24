@@ -1,3 +1,5 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get the current date in the format YYYY-MM-DD
     var currentDate = new Date().toISOString().split('T')[0];
@@ -86,21 +88,5 @@ document.addEventListener('DOMContentLoaded', function () {
             // Call the submitReservationForm function
             submitReservationForm();
         });
-    }
-
-    // Check for time input support
-    var timeInput = document.getElementById('time');
-    var timeFallbackInput = document.getElementById('timeFallback');
-
-    // Check if time input is supported
-    if (timeInput && timeFallbackInput) {
-        if (timeInput.type === 'time') {
-            // Time input is supported, hide the fallback
-            timeFallbackInput.style.display = 'none';
-        } else {
-            // Time input is not supported, hide the time input and show the fallback
-            timeInput.style.display = 'none';
-            timeFallbackInput.style.display = 'block';
-        }
     }
 });
