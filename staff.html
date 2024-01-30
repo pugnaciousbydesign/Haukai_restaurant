@@ -17,7 +17,13 @@
     </noscript>
     <!-- Reference the external JavaScript file -->
     <script src="js/script.js"></script>
-
+<!-- Custom CSS for styling the login form -->
+<style>
+    #login-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+</style>
 
 </head>
 
@@ -47,7 +53,47 @@
         </div>
         <div class="content">
             <p>This is a secure area for authorised staff only.</p>
-            <!-- Your staff page content goes here -->
+            
+            <!-- Staff Contact Details -->
+            <div class="staff-section">
+                <div class="col_header">
+                    <h2>Contact Details</h2>
+                </div>
+                <p>Staff contact details: name and phone number</p>
+                <!-- Example Staff Contact Details (Replace with your actual data) -->
+                <ul>
+                    <li>Name: Kim Rasmussen</li>
+                    <li>Phone: 123-456-7890</li>
+                </ul>
+            </div>
+
+            <!-- Staff Roster -->
+            <div class="staff-section">
+                <div class="col_header">
+                    <h2>Staff Roster</h2>
+                </div>
+                <p>Who is working on which day for the next two weeks</p>
+                <!-- Example Staff Roster (Replace with your actual data) -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Staff Member</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Kim Rasmussen</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Jane Doe</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
     <br>
