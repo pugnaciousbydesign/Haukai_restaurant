@@ -1,6 +1,6 @@
-
+<Files "staff.html">
     AuthType Basic
     AuthName "Staff Area"
     AuthUserFile .htpasswd
     Require valid-user
-
+</Files>
