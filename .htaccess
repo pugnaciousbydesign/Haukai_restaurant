@@ -1,6 +1,15 @@
+# Restrict access to staff.html
 <Files "staff.html">
-    AuthType Basic
-    AuthName "Staff Area"
+    # Specify the path to the password file
     AuthUserFile .htpasswd
+
+    # Set the authentication realm
+    AuthName "Staff Area"
+
+    # Specify the authentication type
+    AuthType Basic
+
+    # Require valid user
     Require valid-user
 </Files>
+

@@ -3,23 +3,23 @@
 <html lang="en">
 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to Haukai Restaurant</title>
-        <link rel="stylesheet" href="css/styles.css">
-       <!--fonts-->
-       <link 
-       rel="preload"
-       href="https://fonts.googleapis.com/css2?family=Trirong:wght@400;700&family=Poppins:wght@400;700&family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-       <noscript>
-         <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@400;700&family=Poppins:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet" type="text/css"/>
-       </noscript>
-        <!-- footer social -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <!-- Reference the external JavaScript file -->
-        <script src="js/script.js"></script>
-    </head>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome to Haukai Restaurant</title>
+      <link rel="stylesheet" href="css/styles.css">
+      <!--fonts-->
+      <link 
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Trirong:wght@400;700&family=Poppins:wght@400;700&family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+      <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@400;700&family=Poppins:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet" type="text/css"/>
+      </noscript>
+      <!-- footer social -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <!-- Reference the external JavaScript file -->
+      <script src="js/script.js"></script>
+  </head>
 
     <body>
       <header>
@@ -48,95 +48,96 @@
           </div>
       </header>
 
-  <!--MAIN BODY OF PAGE-->
-  <main>
-   <div class="banner text">
-    <h1>Book a table now</h1>
-</div>
-<div><h3> We are currently open Wednesday - Sunday from 4pm till 10pm.</h3></div>
-
-<!-- Reservation Form -->
-<div class="table-container">
-    <form id="reservations-form" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" pattern="[0-9]+" required>
-
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" min="2024-01-18" max="2024-12-31" required>
-
-        <label for="time">Time:</label>
-        <input type="time" id="time" name="time" min="16:00" max="22:00" step="300" required>
-        
-        <label for="guests">Number of Guests:</label>
-        <input type="number" id="guests" name="guests" min="1" required>
-        <br>
-        <br>
-        <button type="submit">Submit Reservation</button>
-    </form>
-</div>
-<br>
-<br>
-
-<div class="">
-  <img 
-          srcset="
-          images/booking-400.webp 400w,
-          images/booking-800.webp 800w,
-          images/booking-1000.webp 1000w,
-          images/booking-1200.webp 1200w,
-          "      
-          src="images/booking-1200.webp" class="img_restaurant" alt="Haukai Restaurant staff in window with open sign"
-          />
-</div>
-<h3> Come try our Maori fusion delight and let your taste buds be tantilised!</h3>
-</main>
-
-  <!--FOOTER-->
-  <footer>
-    <div class="footer-container">
-      <!--logo text-container-->
-      <div class="footer-logo">
-        <a href="#"><span>haukai</span>restaurant</a>
-      
-        <!--social-->
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="footer-bottom">
-          <p> Open: Wednesday to Sunday 4pm-10pm</p>
-          
-          <p> Venue: 123 Cook Street, Auckland, NZ</p>
-         </div>
+      <!--MAIN BODY OF PAGE-->
+      <main>
+        <!--Reservation page-->
+      <div class="banner text">
+        <h1>Book a table now</h1>
       </div>
-      
-      
-      <!--links-->
-      <div class="footer-links">
-        <strong>Contact</strong>
-        <ul>
-          <li><a href="#">Phone : +64 9 855 9999</a></li>
-          <li><a href="#">Email : info@thehaukai.com</a></li>
-        </ul>
-        <div class="subfooter">
-          <p>&copy; The Haukai Restaurant</p>
-          
-          <a href="privacy.html">Privacy Policy</a> |
-          <a href="terms.html">Terms of Use</a>
-        </div>
-        
-      </div>
-    </div>
-  </footer>
+        <div><h3> We are currently open Wednesday - Sunday from 4pm till 10pm.</h3></div>
 
-</body>
+        <!-- Reservation Form -->
+        <div class="table-container">
+            <form id="reservations-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" pattern="[0-9]+" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" min="2024-01-18" max="2024-12-31" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" min="16:00" max="22:00" step="300" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                <br>
+                <br>
+                <button type="submit">Submit Reservation</button>
+            </form>
+          </div>
+          <br>
+          <br>
+
+          <div class="">
+            <img 
+                    srcset="
+                    images/booking-400.webp 400w,
+                    images/booking-800.webp 800w,
+                    images/booking-1000.webp 1000w,
+                    images/booking-1200.webp 1200w,
+                    "      
+                    src="images/booking-1200.webp" class="img_restaurant" alt="Haukai Restaurant staff in window with open sign"
+                    />
+          </div>
+          <h3> Come try our Maori fusion delight and let your taste buds be tantilised!</h3>
+        </main>
+
+          <!--FOOTER-->
+          <footer>
+            <div class="footer-container">
+              <!--logo text-container-->
+              <div class="footer-logo">
+                <a href="#"><span>haukai</span>restaurant</a>
+              
+                <!--social-->
+                <div class="footer-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-bottom">
+                  <p> Open: Wednesday to Sunday 4pm-10pm</p>
+                  
+                  <p> Venue: 123 Cook Street, Auckland, NZ</p>
+                </div>
+              </div>
+              
+              
+              <!--links-->
+              <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                  <li><a href="#">Phone : +64 9 855 9999</a></li>
+                  <li><a href="#">Email : info@thehaukai.com</a></li>
+                </ul>
+                <div class="subfooter">
+                  <p>&copy; The Haukai Restaurant</p>
+                  
+                  <a href="privacy.html">Privacy Policy</a> |
+                  <a href="terms.html">Terms of Use</a>
+                </div>
+                
+              </div>
+            </div>
+          </footer>
+
+    </body>
 
 </html>

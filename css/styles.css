@@ -55,6 +55,7 @@ body {
   ul {
     list-style: disc;
     margin-left: 20px;
+    list-style-position: outside;
   }
     
   ol {
@@ -278,6 +279,34 @@ body {
   .column {
     width: 48%; /* Adjust width as needed */
   }
+}
+
+/*-----------------------------------------------------------------
+# NEW Flex Boxes
+------------------------------------------------------------------*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-details ul {
+  list-style-type: disc; 
+  padding: 0; 
+}
+
+.contact-details li {
+  margin: 10px 0; 
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
   /*--------------------------------------------------------------

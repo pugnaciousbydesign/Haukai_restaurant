@@ -2,12 +2,17 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // Get the current date in the format YYYY-MM-DD
-    var currentDate = new Date().toISOString().split('T')[0];
+    var currentDate = new Date();
+    var year = currentDate.getFullYear();
+    var month = String(currentDate.getMonth() + 1).padStart(2, '0'); // January is 0
+    var day = String(currentDate.getDate()).padStart(2, '0');
+
+    var formattedCurrentDate = year + '-' + month + '-' + day;
 
     // Set the minimum date for the date input field in the reservation form
     var dateInput = document.getElementById('date');
     if (dateInput) {
-        dateInput.min = currentDate;
+        dateInput.min = formattedCurrentDate;
     }
 
     // Show message function for general feedback form

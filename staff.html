@@ -7,9 +7,9 @@
     <title>Staff Area</title>
     <meta name="description" content="Experience the unique flavors of Māori and Pākeha kai at Haukai Restaurant. Explore our menu, make a reservation, and indulge in traditional and innovative dishes. Open Wednesday to Sunday, 4pm-10pm. Visit us at 123 Cook Street, Auckland, NZ.">
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!--fonts-->
-    <link 
+    <link
     rel="preload"
     href="https://fonts.googleapis.com/css2?family=Trirong:wght@400;700&family=Poppins:wght@400;700&family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <noscript>
@@ -17,6 +17,35 @@
     </noscript>
     <!-- Reference the external JavaScript file -->
     <script src="js/script.js"></script>
+
+    <!-- Custom CSS for styling the login form -->
+    <style>
+        #login-form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .staff-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .staff-section table, .staff-section th, .staff-section td {
+            border: 1px solid #ddd;
+        }
+
+        .staff-section th, .staff-section td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .staff-section th {
+            background-color: #35474B;
+            color: #f2f2f2;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -40,23 +69,32 @@
     </header>
 
     <main>
+        <!--Staff Area-->
         <div class="banner">
             <h1>Welcome to the Staff Area</h1>
         </div>
         <div class="content">
-            <p>This is a secure area for authorised staff only.</p>
-            
+            <p>This is a secure area for authoriSed staff only.</p>
+
             <!-- Staff Contact Details -->
             <div class="staff-section">
                 <div class="col_header">
                     <h2>Contact Details</h2>
                 </div>
-                <p>Staff contact details: name and phone number</p>
-                <!-- Example Staff Contact Details (Replace with your actual data) -->
-                <ul>
-                    <li>Name: Kim Rasmussen</li>
-                    <li>Phone: 123-456-7890</li>
-                </ul>
+
+                <p>Staff contact details: </p>
+                <div class="contact-details">
+                    <ul>
+                        <li>Name: Kim Rasmussen</li>
+                        <li>Phone: 123-456-7890</li>
+                        <li>Name: Jane Does</li>
+                        <li>Phone: 123-456-0000</li>
+                        <li>Name: Tony Smith</li>
+                        <li>Phone: 123-456-1111</li>
+                        <li>Name: Karen Jones</li>
+                        <li>Phone: 123-456-2222</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- Staff Roster -->
@@ -64,89 +102,163 @@
                 <div class="col_header">
                     <h2>Staff Roster</h2>
                 </div>
+
                 <p>Who is working on which day for the next two weeks</p>
-                <!-- Example Staff Roster (Replace with your actual data) -->
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Staff Member</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday</td>
-                            <td>Kim Rasmussen</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>Jane Doe</td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+                <div class="flex-column">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Day</th>
+                                <th>Date</th>
+                                <th>Staff Members</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>January</td>
+                                <td>Monday</td>
+                                <td>15th</td>
+                                <td>Kim Rasmussen, Tony Smith</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Tuesday</td>
+                                <td>16th</td>
+                                <td>Jane Doe, Karen Jones</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Wednesday</td>
+                                <td>17th</td>
+                                <td>Kim Rasmussen, Tony Smith</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Thursday</td>
+                                <td>18th</td>
+                                <td>Jane Doe, Tony Smith</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Friday</td>
+                                <td>19th</td>
+                                <td>Tony Smith, Karen Jones</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Saturday</td>
+                                <td>20th</td>
+                                <td>Kim Rasmussen, Tony Smith, Karen Jones</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Sunday</td>
+                                <td>21st</td>
+                                <td>Kim Rasmussen, Jane Doe, Karen Jones</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Monday</td>
+                                <td>22nd</td>
+                                <td>Kim Rasmussen, Jane Doe</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Tuesday</td>
+                                <td>23rd</td>
+                                <td>Toney Smith, Karen Jones</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Wednesday</td>
+                                <td>24th</td>
+                                <td>Kim Rasmussen, Karen Jones</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Thursday</td>
+                                <td>25th</td>
+                                <td>Karen Jones, Jane Doe</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Friday</td>
+                                <td>26th</td>
+                                <td>Jane Doe, Tony Smith</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Saturday</td>
+                                <td>27th</td>
+                                <td>Kim Rasmussen, Jane Doe, Tony Smith</td>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>Sunday</td>
+                                <td>28th</td>
+                                <td>Kim Rasmussen, Karen Jones, Jane Doe</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </main>
     <br>
     <br>
 
+    <!--Reservations link-->
+    <div class="content">
+        <h2>Make a reservation now</h2>
+        <p>Come and enjoy a night with us:</p>
+        <div class="myButton">
+            <a href="reservation.html">Book a table now</a>
+        </div>
+    </div>
+    <br>
+    <br>
 
-<!--Reservations link-->
-<div class="content">
-  <h2>Make a reservation now</h2>
-  <p> Come and enjoy a night with us:</p>
-  <div class="myButton">
-    <a href="reservation.html">Book a table now</a>
- 
-</div>
-</div>
-<br>
-<br>
-     
     <!-- footer social -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-            
-    
-    
-     <!--FOOTER-->
+
+    <!--FOOTER-->
     <footer>
-      <div class="footer-container">
-        <!--logo text-container-->
-        <div class="footer-logo">
-          <a href="#"><span>haukai</span>restaurant</a>
-        
-          <!--social-->
-          <div class="footer-social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-          <div class="footer-bottom">
-            <p> Open: Wednesday to Sunday 4pm-10pm</p>
-            
-            <p> Venue: 123 Cook Street, Auckland, NZ</p>
-           </div>
+        <div class="footer-container">
+            <!--logo text-container-->
+            <div class="footer-logo">
+                <a href="#"><span>haukai</span>restaurant</a>
+
+                <!--social-->
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>Open: Wednesday to Sunday 4pm-10pm</p>
+
+                    <p>Venue: 123 Cook Street, Auckland, NZ</p>
+                </div>
+            </div>
+
+            <!--links-->
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="#">Phone : +64 9 855 9999</a></li>
+                    <li><a href="#">Email : info@thehaukai.com</a></li>
+                </ul>
+                <div class="subfooter">
+                    <p>&copy; The Haukai Restaurant</p>
+
+                    <a href="privacy.html">Privacy Policy</a> |
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+            </div>
         </div>
-        
-        
-        <!--links-->
-        <div class="footer-links">
-          <strong>Contact</strong>
-          <ul>
-            <li><a href="#">Phone : +64 9 855 9999</a></li>
-            <li><a href="#">Email : info@thehaukai.com</a></li>
-          </ul>
-          <div class="subfooter">
-            <p>&copy; The Haukai Restaurant</p>
-            
-            <a href="privacy.html">Privacy Policy</a> |
-            <a href="terms.html">Terms of Use</a>
-          </div>
-          
-        </div>
-      </div>
     </footer>
 
 </body>
